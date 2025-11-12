@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="alefinck">
+  <meta name="description" content="A simple webpage.">
+  <title>Survey</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <div class="width-wrap">
+    <header id="top">
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="links.html">Links</a></li>
+              <li><a href="glossary.html">Glossary</a></li>
+              <li><a href="survey.html">Survey</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Survey</h1>
+      <form action="https://formspree.io/f/mjkjkvwj" method="post">
+        
+        <p>
+          <label for="name_field">What is your name? <strong>*</strong></label><br>
+          <input type="text" id="name_field" name="name_field" required>
+        </p>
+
+        <p>
+          <label for="email_field">What is your email? <strong>*</strong></label><br>
+          <input type="email" id="email_field" name="email_field" required>
+        </p>
+
+        <p>
+          <label for="best_whole_number">Which whole number is best?</label><br>
+          <input type="number" id="best_whole_number" name="best_whole_number" min="1">
+        </p>
+
+        <p>
+          <label for="best_day">Which day is best?</label><br>
+          <input type="date" id="best_day" name="best_day">
+        </p>
+
+        <p>
+          <label for="best_bear">Which bear is best? <strong>*</strong></label><br>
+          <select id="best_bear" name="best_bear" required>
+            <option value="">&nbsp;</option>
+            <option value="black">Black</option>
+            <option value="brown">Brown</option>
+            <option value="care">Care</option>
+            <option value="panda">Panda</option>
+            <option value="polar">Polar</option>
+            <option value="teddy">Teddy</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Do you like radio buttons?</legend>
+          <ul>
+            <li>
+              <label><input type="radio" name="enjoys_radio_buttons" value="yes"> Yes</label>
+            </li>
+            <li>
+              <label><input type="radio" name="enjoys_radio_buttons" value="no"> No</label>
+            </li>
+            <li>
+              <label><input type="radio" name="enjoys_radio_buttons" value="none" checked> None of your business (?)</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <p>
+          <label for="life_meaning">What is the meaning of life?</label><br>
+          <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </main>
+
+    <footer>
+      <hr>
+      <blockquote>
+        "The only way to do great work is to love what you do."<br>
+        <cite>&mdash; <span class="author">Steve Jobs</span></cite>
+      </blockquote>
+      <p>&copy; 2021 <a href="mailto:alessanco@email.com?subject=Message%20from%20CSD112%20Website">Alessanco</a></p>
+    </footer>
+
+    <a href="#top" title="Back to top"></a>
+  </div>
+</body>
+</html>
