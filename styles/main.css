@@ -1,0 +1,183 @@
+/* Box-sizing rule */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* width-wrap container */
+.width-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2em 2em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    margin-bottom: 3em;
+}
+
+/* Footer <hr> */
+footer hr {
+    width: min(max(50vw, 300px), 890px);
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 3px dotted #666;
+    /* pick your own color */
+}
+
+/* Add colon to each <dt> in glossary */
+dt::after {
+    content: ":";
+}
+
+/* Body and main container */
+body {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
+.width-wrap {
+    background-color: #ffffff;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    color: #005f73;
+}
+
+/* Regular hyperlinks */
+a {
+    color: #0a9396;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header navigation links (specific to nav only) */
+header nav a {
+    color: #ee9b00;
+}
+
+header nav a:hover {
+    color: #ca6702;
+}
+
+/* Selected text background */
+::selection {
+    background-color: #94d2bd;
+    color: #000;
+}
+
+/* Header layout and spacing */
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+
+/* Line beneath the header */
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+/* Remove list default spacing */
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Arrange nav links horizontally */
+header nav li {
+    display: inline;
+}
+
+/* Navigation hyperlinks */
+header nav a {
+    display: inline-block;
+    border-top: 4px solid transparent;
+    padding: 1em 1em 0.5em;
+    text-decoration: none;
+    color: #ee9b00;
+    /* or your chosen header link color */
+}
+
+/* Hover effect for the top bar */
+header nav a:hover {
+    border-top-color: #ca6702;
+    /* highlight color */
+}
+
+/* ===== TABLE STYLES ===== */
+
+/* Cell padding */
+table th,
+table td {
+    padding: 0.3em 1em;
+}
+
+/* Header areas */
+table thead th,
+table tfoot th,
+table tbody th {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Regular data cells */
+table tbody td {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Even-numbered rows */
+table tbody tr:nth-child(even) td {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* ===== FORM STYLES ===== */
+
+/* Make labels block by default */
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* Keep labels inline after radio or checkbox inputs */
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+    margin-left: 0.3em;
+}
+
+/* Style submit buttons */
+input[type="submit"],
+button[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    color: #ffffff;
+    /* text color */
+    background-color: #0a9396;
+    /* background color */
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 0.3em;
+}
+
+/* Hover state for submit buttons */
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #007f84;
+    /* slightly darker shade */
+}
+
+/* Highlight invalid fields */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    background-color: rgba(255, 0, 0, 0.1);
+}
