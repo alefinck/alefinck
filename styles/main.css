@@ -59,11 +59,21 @@ a:hover {
 
 /* Header navigation links (specific to nav only) */
 header nav a {
+    display: inline-block;
+    border-top: 4px solid transparent;
+    padding: 1em 1em 0.5em;
+
+    font-weight: bold;          
+    text-decoration: none;      
+    text-transform: uppercase;  
+    letter-spacing: 4px;        
+
     color: #ee9b00;
 }
 
 header nav a:hover {
-    color: #ca6702;
+    border-top-color: #ca6702;    
+    text-decoration: none;          
 }
 
 /* Selected text background */
@@ -181,3 +191,61 @@ select:invalid,
 textarea:invalid {
     background-color: rgba(255, 0, 0, 0.1);
 }
+
+h1 {
+    font-family: "Poppins", sans-serif; 
+    font-weight: 700;
+
+    background: linear-gradient(90deg, #ff7a00, #ff00aa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    color: transparent;
+}
+
+
+.bio {
+    column-count: 3;      
+    column-gap: 2em;      
+}
+
+.bio #making-a-table {
+    column-span: all;     
+    margin-top: 1em;     
+}
+
+.bio table {
+    border-collapse: collapse;  
+}
+
+.bio table caption {
+    caption-side: bottom;        
+    padding-top: 0.5em;
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;   
+    height: auto;
+}
+
+.bio img {
+    padding: 2%;                    
+    background-color: #ffffff;       
+    box-shadow: 0 0 10px rgba(0,0,0,0.3); 
+}
+
+footer {
+    font-size: 75%;
+    text-align: center;
+}
+
+a[href="#top"] {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    text-decoration: none;
+}
+
+a[href="#top"]:hover {
+    text-decoration: none;
+}
+
